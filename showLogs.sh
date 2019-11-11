@@ -1,0 +1,1 @@
+cat ./logs/combined.log
