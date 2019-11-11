@@ -1,0 +1,141 @@
+@primary-color: #03363d;
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  position: absolute;
+  top:0px;
+  bottom: 0px;
+
+  .error-bar {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 50px;
+    background-color: #8A0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+  }
+
+
+  .title {
+    margin-bottom: 30px;
+    font-size: 60px;
+  }
+
+  .input-url {
+    width: 60vw;
+    line-height: 40px;
+    max-width: 650px;
+    padding: 0 20px;
+    font-size: 18px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: 1px solid #cdcdcd;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  }
+
+  .input-expire {
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 15px;
+    width: 30vw;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    outline: none;
+    border-radius: 10px;
+    margin: 20px 0px 30px 0px;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  }
+
+
+  .shorten-btn {
+    width: 200px;
+    min-height: 50px;
+    font-size: 18px;
+    background-color:@primary-color;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+
+    &:hover{
+      background-color: lighten(@primary-color, 20);
+    }
+  }
+
+  .result {
+    width: 80vw;
+    max-width: 600px;
+    height: auto;
+    background-color: @primary-color;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    border-radius: 20px;
+    word-break: break-word;
+    padding:10px;
+
+    div {
+      margin: 15px;
+
+      .copy-btn {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+        padding: 10px 0px;
+        min-height: 40px;
+        color: @primary-color;
+        background-color: white;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 550px) {
+  .landing {
+    justify-content: flex-start;
+    height: auto;
+
+    .shorten-btn {
+      &:hover{
+        background-color: @primary-color;
+      }
+    }
+    
+    .title {
+      margin-top:80px;
+      font-size: 40px;
+    }
+
+    .input-url {
+      width: 75vw;
+    }
+
+    .result {
+      font-size: 18px;
+      height: auto;
+      padding:10px 10px;
+      min-height: 140px;
+    }
+  }
+}

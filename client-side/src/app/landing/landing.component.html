@@ -1,0 +1,18 @@
+<div class="landing">
+  <div [@showHideErr]="showErrorBar ? 'showErr' : 'hideErr'" class="error-bar">{{errorText}}</div>
+  <div class="title">URL Shortener</div>
+  <input placeholder="Input full url. (e.g.: http://www.google.com)" class="input-url" [value]="url" (input)="url = $event.target.value" type="text">
+  <div>
+      <input type="checkbox" (click)="setExpiration()">
+      Set expiration (in seconds)
+  </div>
+
+  <input placeholder="Set expiration time in seconds. (e.g.: 10)" class="input-expire" pattern="\d*" type="number" [@showHide]="showExpiration ? 'show' : 'hide'" [value]="expire" (input)="expire = $event.target.value" >
+
+  <button class="shorten-btn" (click)="onSubmit()">SHORTEN</button>
+  <div *ngIf="result !== ''" class="result">
+    <div>{{result}}</div>
+    <div>
+      <button class="copy-btn" (click)="onCopy()">COPY</button>
+    </div>
+</div>

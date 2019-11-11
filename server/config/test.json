@@ -1,0 +1,9 @@
+{
+  "aws": {
+      "region": "ap-southeast-1",
+      "dynamodb": {
+        "tableName": "zd-tiny-url"
+      }
+    },
+  "test": true
+}

@@ -1,0 +1,28 @@
+{
+  "name": "zd-tiny-url",
+  "version": "1.0.0",
+  "description": "tinyUrl",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/bin/www.js",
+    "test": "NODE_ENV=test PORT=8000 mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "aws-sdk": "^2.437.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "cors": "^2.8.5",
+    "express": "~4.16.0",
+    "fastest-validator": "^0.6.19",
+    "moment": "^2.24.0",
+    "nanoid": "^2.1.6",
+    "winston": "^3.2.1",
+    "mocha": "^6.1.3"
+  }
+}
