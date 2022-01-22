@@ -21,7 +21,7 @@
     "express": "~4.16.0",
     "fastest-validator": "^0.6.19",
     "moment": "^2.24.0",
-    "nanoid": "^2.1.6",
+    "nanoid": "^3.1.31",
     "winston": "^3.2.1",
     "mocha": "^6.1.3"
   }
