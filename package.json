@@ -20,7 +20,7 @@
     "cors": "^2.8.5",
     "express": "~4.16.0",
     "fastest-validator": "^0.6.19",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "nanoid": "^2.1.6",
     "winston": "^3.2.1",
     "mocha": "^6.1.3"
